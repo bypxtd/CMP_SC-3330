@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="450.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bypxtdstopwatchfxml.BypxtdStopwatchFXMLController">
+   <children>
+      <StackPane prefHeight="249.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="analogclockface" fitHeight="200.0" fitWidth="200.0">
+               <image>
+                  <Image url="@analogclockface.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="analogclockhandhours" fitHeight="124.0" fitWidth="200.0">
+               <image>
+                  <Image url="@analoghandhours.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="analogclockhandminutes" fitHeight="167.0" fitWidth="200.0">
+               <image>
+                  <Image url="@analoghandminutes.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="analogclockhandseconds" fitHeight="154.0" fitWidth="200.0">
+               <image>
+                  <Image url="@analoghandseconds.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="digitalclockface" fitHeight="93.0" fitWidth="200.0">
+               <image>
+                  <Image url="@digitalclockface.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="digitalclocklabel" text="00:00:00">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="7.0" prefWidth="450.0" spacing="15.0">
+         <children>
+            <Button fx:id="Start" mnemonicParsing="false" onAction="#handleStartButtonAction" text="Start" />
+            <Button fx:id="Stop" mnemonicParsing="false" onAction="#handleStopButtonAction" text="Stop" />
+            <Button fx:id="Reset" mnemonicParsing="false" onAction="#handleResetButtonAction" text="Reset" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
